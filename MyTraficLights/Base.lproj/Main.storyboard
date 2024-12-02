@@ -19,31 +19,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="WfQ-3p-XS1">
-                                <rect key="frame" x="121.66666666666669" y="129" width="150" height="594"/>
+                                <rect key="frame" x="100" y="119" width="193" height="639"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bh0-95-mdu" userLabel="RedLightView">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <rect key="frame" x="21.666666666666671" y="0.0" width="150" height="150"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="Bh0-95-mdu" secondAttribute="height" multiplier="1:1" id="zsD-r8-fAC"/>
+                                            <constraint firstAttribute="width" secondItem="Bh0-95-mdu" secondAttribute="height" multiplier="1:1" id="0Kt-Ae-qw9"/>
+                                            <constraint firstAttribute="width" constant="150" id="CpY-NF-Lks"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5g-CJ-eeg" userLabel="OrangeLightView">
-                                        <rect key="frame" x="0.0" y="188" width="150" height="150"/>
+                                        <rect key="frame" x="21.666666666666671" y="203" width="150" height="150"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="h5g-CJ-eeg" secondAttribute="height" multiplier="1:1" id="8bF-xI-bAY"/>
+                                            <constraint firstAttribute="width" secondItem="h5g-CJ-eeg" secondAttribute="height" multiplier="1:1" id="hAT-Ol-dAW"/>
+                                            <constraint firstAttribute="width" constant="150" id="pHF-9K-cuZ"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ahh-tN-V7B" userLabel="GreenLightView">
-                                        <rect key="frame" x="0.0" y="376" width="150" height="150"/>
+                                        <rect key="frame" x="21.666666666666671" y="406" width="150" height="150"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="Ahh-tN-V7B" secondAttribute="height" multiplier="1:1" id="rJf-4y-QJp"/>
+                                            <constraint firstAttribute="width" constant="150" id="H1X-kK-2aE"/>
+                                            <constraint firstAttribute="width" secondItem="Ahh-tN-V7B" secondAttribute="height" multiplier="1:1" id="PiU-B0-TE1"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmp-de-20X" userLabel="ChangeLightButton">
-                                        <rect key="frame" x="37.333333333333329" y="564" width="75" height="30"/>
+                                        <rect key="frame" x="59" y="609" width="75" height="30"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="YGw-Q9-sPT"/>
@@ -62,9 +65,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="WfQ-3p-XS1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LDA-wT-dZY"/>
-                            <constraint firstItem="WfQ-3p-XS1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="Syr-8b-ewj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WfQ-3p-XS1" secondAttribute="bottom" constant="95" id="YJt-yr-YRu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WfQ-3p-XS1" secondAttribute="bottom" constant="60" id="FZ6-Qp-ZbN"/>
+                            <constraint firstItem="WfQ-3p-XS1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bG6-gz-E6U"/>
+                            <constraint firstItem="WfQ-3p-XS1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="kAW-qO-wgE"/>
+                            <constraint firstItem="WfQ-3p-XS1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="xFh-4i-QbF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WfQ-3p-XS1" secondAttribute="trailing" constant="100" id="y0d-O5-7f8"/>
                         </constraints>
                     </view>
                     <connections>
