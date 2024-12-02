@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="o0u-2I-3uF">
-                                <rect key="frame" x="16" y="79" width="398" height="505"/>
+                                <rect key="frame" x="155" y="213.66666666666663" width="120" height="505"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OgK-hv-OOw">
-                                        <rect key="frame" x="139" y="0.0" width="120" height="400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="400"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bh0-95-mdu" userLabel="RedLightView">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
@@ -33,7 +33,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5g-CJ-eeg" userLabel="OrangeLightView">
-                                                <rect key="frame" x="0.0" y="140" width="120" height="120"/>
+                                                <rect key="frame" x="0.0" y="140.00000000000003" width="120" height="119.99999999999997"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="h5g-CJ-eeg" secondAttribute="height" multiplier="1:1" id="KyZ-ZG-8NY"/>
@@ -51,9 +51,11 @@
                                             <constraint firstItem="h5g-CJ-eeg" firstAttribute="width" secondItem="Bh0-95-mdu" secondAttribute="width" id="IdY-R7-QYk"/>
                                             <constraint firstItem="Ahh-tN-V7B" firstAttribute="width" secondItem="Bh0-95-mdu" secondAttribute="width" id="MuP-C0-ZUe"/>
                                         </constraints>
+                                        <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                        <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmp-de-20X" userLabel="ChangeLightButton">
-                                        <rect key="frame" x="161.66666666666666" y="475" width="75" height="30"/>
+                                        <rect key="frame" x="22.666666666666657" y="475" width="75" height="30"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="YGw-Q9-sPT"/>
@@ -67,15 +69,15 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
                                 <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o0u-2I-3uF" secondAttribute="trailing" constant="16" id="HUo-rU-a2m"/>
-                            <constraint firstItem="o0u-2I-3uF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="IRa-wF-3sQ"/>
-                            <constraint firstItem="o0u-2I-3uF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="chz-T4-dVK"/>
+                            <constraint firstItem="o0u-2I-3uF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Jl-KE-i8W"/>
+                            <constraint firstItem="o0u-2I-3uF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z8f-6J-gDg"/>
                         </constraints>
                     </view>
                     <connections>
