@@ -29,9 +29,9 @@ final class ViewController: UIViewController {
         orangeLightView.alpha = 0.3
         greenLightView.alpha = 0.3
         
-        redLightView.layer.cornerRadius = 75
-        orangeLightView.layer.cornerRadius = 75
-        greenLightView.layer.cornerRadius = 75
+        redLightView.layer.cornerRadius = 60
+        orangeLightView.layer.cornerRadius = 60
+        greenLightView.layer.cornerRadius = 60
     }
 
     @IBAction func changeLightButtonDidTapped() {
