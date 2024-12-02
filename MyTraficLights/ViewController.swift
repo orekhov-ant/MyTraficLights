@@ -22,11 +22,16 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        changeLightButton.layer.cornerRadius = 10
         activeLight = "none"
+        
         redLightView.alpha = 0.3
         orangeLightView.alpha = 0.3
         greenLightView.alpha = 0.3
-        changeLightButton.layer.cornerRadius = 10
+        
+        redLightView.layer.cornerRadius = 75
+        orangeLightView.layer.cornerRadius = 75
+        greenLightView.layer.cornerRadius = 75
     }
 
     @IBAction func changeLightButtonDidTapped() {
@@ -52,8 +57,6 @@ final class ViewController: UIViewController {
             redLightView.alpha = 1
             activeLight = "red"
         }
-        
     }
-    
 }
 
