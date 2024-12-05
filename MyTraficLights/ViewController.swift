@@ -10,14 +10,14 @@ import UIKit
 final class ViewController: UIViewController {
 
     @IBOutlet var redLightView: UIView!
-    
     @IBOutlet var orangeLightView: UIView!
-    
     @IBOutlet var greenLightView: UIView!
         
     @IBOutlet var changeLightButton: UIButton!
     
     private var activeLight: String!
+    private let lightOnValue: CGFloat = 1
+    private let lightOfValue: CGFloat = 0.3
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +25,9 @@ final class ViewController: UIViewController {
         changeLightButton.layer.cornerRadius = 10
         activeLight = "none"
         
-        redLightView.alpha = 0.3
-        orangeLightView.alpha = 0.3
-        greenLightView.alpha = 0.3
+        redLightView.alpha = lightOfValue
+        orangeLightView.alpha = lightOfValue
+        greenLightView.alpha = lightOfValue
         
         redLightView.layer.cornerRadius = 60
         orangeLightView.layer.cornerRadius = 60
@@ -42,19 +42,19 @@ final class ViewController: UIViewController {
     private func toggleLightColor() {
         switch activeLight {
         case "red":
-            redLightView.alpha = 0.3
-            orangeLightView.alpha = 1
+            redLightView.alpha = lightOfValue
+            orangeLightView.alpha = lightOnValue
             activeLight = "orange"
         case "orange":
-            orangeLightView.alpha = 0.3
-            greenLightView.alpha = 1
+            orangeLightView.alpha = lightOfValue
+            greenLightView.alpha = lightOnValue
             activeLight = "green"
         case "green":
-            greenLightView.alpha = 0.3
-            redLightView.alpha = 1
+            greenLightView.alpha = lightOfValue
+            redLightView.alpha = lightOnValue
             activeLight = "red"
         default:
-            redLightView.alpha = 1
+            redLightView.alpha = lightOnValue
             activeLight = "red"
         }
     }
